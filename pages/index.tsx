@@ -28,12 +28,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Beispielhafte Vorschaubilder – ersetze src mit deinen echten Pfaden */}
           {[
-            "/post_idee_01.png",
-            "/post_idee_02.png",
-            "/post_idee_03.png",
-            "/post_idee_04.png",
-            "/post_idee_05.png",
-            "/post_idee_06.png",
+            "public/post_idee_01.png",
+            "public/post_idee_02.png",
+            "public/post_idee_03.png",
+            "public/post_idee_04.png",
+            "public/post_idee_05.png",
+            "public/post_idee_06.png",
           ].map((src) => (
             <div key={src} className="overflow-hidden rounded-2xl shadow-lg">
               <Image
