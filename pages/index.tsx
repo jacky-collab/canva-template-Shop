@@ -6,6 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-pink-100 text-gray-800">
       {/* Hero */}
       <section className="relative flex items-center justify-center h-screen px-6">
+        {/* Hintergrund-Vorschau */}
         <div className="absolute inset-0 bg-[url('/product_preview.png')] bg-center bg-cover opacity-20" />
         <div className="relative max-w-2xl text-center space-y-6">
           <h1 className="text-5xl font-extrabold leading-tight">
@@ -14,9 +15,15 @@ export default function Home() {
           <p className="text-lg">
             9 moderne Post-Vorlagen & 30 Content-Ideen – perfekt für Business-Mamas!
           </p>
-          <Button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-xl">
-            Jetzt sichern
-          </Button>
+          <a
+            href="https://payhip.com/b/XW8mL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-xl">
+              Jetzt sichern
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -26,14 +33,13 @@ export default function Home() {
           Ein Blick ins Paket
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {/* Beispielhafte Vorschaubilder – ersetze src mit deinen echten Pfaden */}
           {[
-            "/public/post_idee_01.png",
-            "/public/post_idee_02.png",
-            "/public/post_idee_03.png",
-            "/public/post_idee_04.png",
-            "/public/post_idee_05.png",
-            "/public/post_idee_06.png",
+            "<Image src="/post_idee_01.png" width={400} height={400} alt="Post 1" />",
+            "/post_idee_02.png",
+            "/post_idee_03.png",
+            "/post_idee_04.png",
+            "/post_idee_05.png",
+            "/post_idee_06.png",
           ].map((src) => (
             <div key={src} className="overflow-hidden rounded-2xl shadow-lg">
               <Image
@@ -60,7 +66,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-10 bg-white text-center text-sm text-gray-500">
-        <p>&copy; 2025 Deine Firma. Impressum & Datenschutz</p>
+        <p>&copy; 2025 Deine Firma. <a href="/impressum" className="underline">Impressum</a> &amp; <a href="/datenschutz" className="underline">Datenschutz</a></p>
       </footer>
     </div>
   );
