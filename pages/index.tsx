@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-amber-100 text-amber-900">
-      <div className="text-center space-y-8 p-6">
+    <div
+      className="flex items-center justify-center min-h-screen"
+      style={{ backgroundColor: "#fdf6e3", color: "#8c4a3e" }}
+    >
+      <div className="text-center space-y-8 p-6 max-w-md">
         {/* Hero */}
         <h1 className="text-5xl font-extrabold">
           Mama Content Starterkit
@@ -17,7 +20,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button className="bg-amber-800 hover:bg-amber-900 text-white px-10 py-5 text-2xl rounded-2xl">
+          <Button
+            className="px-12 py-6 text-2xl rounded-2xl shadow-lg"
+            style={{ backgroundColor: "#8c4a3e", color: "#fdf6e3" }}
+          >
             Jetzt Starterkit sichern
           </Button>
         </a>
